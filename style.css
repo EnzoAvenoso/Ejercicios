@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    /* border: red solid 1px; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Courier New', Courier, monospace */
+}
+body{
+    font-family: Poppins;
+}
+.navbar{
+    background: paleturquoise;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 15rem;
+    /* background: red; */
+}
+.nav-list{
+    display: none;
+    /* background: blue; */
+    list-style: none;
+    /* color: black; */
+}
+.nav-list a{ 
+text-decoration: none;
+color: black;
+border: 1px black solid;
+border-radius: 15px;
+padding: 5px;w
+}
+.nav-list a:hover{
+    background: black;
+    color:white;
+}
+.nav-btn{
+    /* background-color: green; */
+    font-size: 3rem;
+    color: black;
+    align-items: center;
+    margin: 0 30px;
+}
+/* NAVBAR MOBILE */
+/* SECTION 1 BENEFITS */
+.a{
+    background-image: url(./IMGS/CONFIANZA.jpg); 
+}
+.b{background-image: url(./IMGS/CALIDAD.jpg);}
+.c{
+    background-image:url(./IMGS/COMPROMISO.jpg);
+}
+.benefits{
+    background-position: center center;
+    background-size: 100%;
+    height: 33%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-benefits{
+    height: 25rem;
+    background: paleturquoise;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.benefits p{
+    display: none;
+    width: 50%;
+    background-color: rgba(175, 238, 238, 0.637);
+    text-align: center;
+}
+.benefits h2{
+    /* display: none; */
+    background-color: rgba(175, 238, 238, 0.637);
+    padding: 2px;
+}
+
+/* INTENTO DE MEDIA OKEY */
+/* SECTION 2 WE WORK */
+.container-work i{
+    font-size: 4rem;
+    color: paleturquoise;
+}
+.container-work{
+    background: rgb(31, 31, 31);
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+.card-work{
+    flex-direction: column;
+    text-align: center;
+    width: 7rem;
+    /* background: red; */
+}
+.container-work p{
+    color: paleturquoise;
+    padding-top: 10px;
+}
+.container-work h2{
+    color: paleturquoise;
+    padding-top: 10px;}    
+
+ /* SECTION 2 WORK FINALIZADA */
+/* SECTION 3  NUESTROS CLIENTES */
+.clients{
+    background: paleturquoise;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem auto;
+}
+.clients h2{
+    background-color: gold;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 20px;
+}
+.container-clients img {
+    width: 15rem;
+    /* background: red; */
+}
+.container-clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    /* background: green; */
+}
+/* section 3 finalizada */
+/* Comienza el Footer */
+.container-contact{
+    background-color: black;
+    display: flex;
+}
+.container-datos{
+    color: paleturquoise;
+    padding: 5px;
+    /* background-color: red; */
+}
+.container-social{
+    /* background-color: green; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 1rem;
+    /* font-size: 2rem; */
+}
+div i{
+    color: paleturquoise;
+    font-size: 2rem;
+    
+}
+
+/* ACOPLADO DE RESPONSIVE */
+@media screen and (min-width:1024px) { 
+    .nav-btn{
+        display: none;
+    }
+    .nav-list{
+        display: flex;
+        gap: 3rem;
+        margin: 2rem;
+    }
+}
+/* }Section 1 */
+.container-benefits{
+    flex-direction: row;
+    width: 100%;
+    /* background: red; */
+    /* height: 50rem; */
+}
+.container-benefits h2:hover{
+display: none;
+}
+
+.a{
+    width: 33.3%;
+    height: auto;
+    background-size: 180vh;
+    background-position: left;
+}
+.b{
+    width: 33.3%;
+    height: auto;
+    background-size: 180vh;
+}
+.c{
+    width: 33.3%;
+    height: auto;
+    background-size: 180vh;
+}
+/* Section 2 */
+.container-work h2{
+    display: initial;
+    flex-direction: ;
+    font-size: 5rem;
+    /* color: rgb(31, 31, 31); */
+    }
+.container-work i {
+    font-size: 5rem;
+    color: rgb(31, 31, 31);
+    padding: 10px ;
+}
+.container-work p{
+    color: rgb(31, 31, 31);
+    font-size: 20px;
+    padding: ;
+}
+.container-work div{
+    margin: 2.5rem;
+    background-color: paleturquoise;
+    border-radius: 10px;
+}
+.container-contact{
+    justify-content: space-around;
+    padding: 10px;
+}
+
+@media screen and (min-width:1260px){
+    /* *{ */
+        /* border: red solid 2px; */
+        header{
+            justify-content: space-around;
+        }
+        .container-work h2{
+            width: 100%;
+            margin: 0 auto;
+            /* background: red; */
+            text-align: center;
+        }
+        .container-work .card-work:hover{
+            /* background: rgb(31, 31, 31); */
+            /* color: paleturquoise; */
+            transform:scale(1.5);
+            transition: 3s;
+        }
+        .container-clients{
+            flex-direction: row;
+            padding: 20px;
+            gap: 5rem;
+        }
+        .container-clients img:hover{
+            transform: scale(1.1);
+            transition: 2s;
+        }
+    }
